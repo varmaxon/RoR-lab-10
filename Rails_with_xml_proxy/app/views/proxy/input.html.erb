@@ -1,0 +1,10 @@
+<div class="pos">
+    <h1>Лабораторная работа №10</h1></br></br></br>
+    <%= form_with url: "/proxy/show", method: :get do |form| %>
+        <%= form.label :input, "Введите число:"%>
+        <%= form.text_field :input, value: 100 %> <br/></br>
+        <%= form.label :input, "Выберите вид обработки результата:"%>
+        <%= form.select :side, ['Серверный', 'Клиентский', 'Формат-XML'] %> </br></br>
+        <%= form.submit "Ввод"%> 
+    <% end %>
+</div>
